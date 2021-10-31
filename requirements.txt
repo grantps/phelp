@@ -1,0 +1,13 @@
+astpath==0.9.0
+bottle==0.12.19
+cssselect==1.1.0
+flake8==4.0.1
+lxml==4.6.3
+Markdown==3.3.4
+mccabe==0.6.1
+pycodestyle==2.8.0
+pyflakes==2.4.0
+Pygments==2.10.0
+PyYAML==6.0
+superhelp==1.1.1
+tabulate==0.8.9
