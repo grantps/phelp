@@ -1,10 +1,16 @@
 
+#input {
+  margin: 40px 70px 20px 70px;
+}
 #code {
-  height: 200px;
-  width: 500px;
-  text-align: vertical;
+  font-size: 20px;
+  min-height: 200px;
+  min-width: 700px;
+  resize: both;  // override bootstrap
 }
 #code-help {
   height: 500px;
   width: 100%;
+  padding: 0;
+  margin: 0;
 }

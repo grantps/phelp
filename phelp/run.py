@@ -1,11 +1,7 @@
-import os
-
 from flask import Flask, render_template, request, jsonify
 
 from superhelp import conf
 from superhelp.helper import OutputSettings, get_formatted_help_dets
-
-basedir = os.path.abspath(os.path.dirname(__file__))
 
 app = Flask(__name__)
 

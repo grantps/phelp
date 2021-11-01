@@ -8,15 +8,32 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
   <script src="{{ url_for('static', filename='superhelp.js') }}"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
   </head>
   <body>
+    <div id="input">
+
     <h1>SuperHELP</h1>
+
     <p>Paste in Python script and hit HELP button to get help</p>
-    <textarea name="code" id="code" rows="4" cols="70"></textarea>
+
+    <div id="code"></div>
+
+    <script src="{{ url_for('static', filename='/src-min/ace.js') }}" type="text/javascript" charset="utf-8"></script>
+    <script>
+        var code = ace.edit("code");
+        code.setTheme("ace/theme/ambiance");
+        code.session.setMode("ace/mode/python");
+        code.setOption("maxLines", 100);
+    </script>
+
     <br><br>
+
     <input type="submit" name="next" value="HELP" onclick="getHelp();">
-    <br><br>
-     <iframe id="code-help" srcdoc="" title="Code Help"></iframe> 
+
     </div>
+    
+    <iframe id="code-help" srcdoc="" title="Code Help"></iframe> 
+
   </body>
 </html>
