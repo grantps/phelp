@@ -21,10 +21,12 @@
 
     <script src="{{ url_for('static', filename='/src-min/ace.js') }}" type="text/javascript" charset="utf-8"></script>
     <script>
-        var code = ace.edit("code");
-        code.setTheme("ace/theme/ambiance");
-        code.session.setMode("ace/mode/python");
-        code.setOption("maxLines", 100);
+        var code_editor = ace.edit("code");
+        code_editor.setTheme("ace/theme/ambiance");
+        code_editor.session.setMode("ace/mode/python");
+        code_editor.setOption("maxLines", 100);
+        code_editor.renderer.setPadding(20);
+        code_editor.renderer.setScrollMargin(10, 10);
     </script>
 
     <br><br>

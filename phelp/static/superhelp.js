@@ -1,6 +1,6 @@
 function getHelp() {
 
-  var code_content = code.getValue();
+  var code_content = code_editor.getValue();
   var help = document.getElementById("code-help");
 
   $.ajax({
