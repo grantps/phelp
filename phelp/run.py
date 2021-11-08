@@ -25,14 +25,10 @@ def get_help() -> str:
     help_strs = [help_str for help_str, _file_path in formatted_help_dets]
     help_str = '\n\n'.join(help_strs)
     return jsonify(help_str)
-
-if __name__ == '__main__':
-    app.run(debug=True)
-    
     
 if __name__ == "__main__":
     LOCAL_DEV_PORT = 5_000
-    print(os.environ)
+    #print(os.environ)
     port = int(os.environ.get("PORT", LOCAL_DEV_PORT))  ## use Heroku's dynamically assigned port if set otherwise we're in dev and use that one
     app.run(host='0.0.0.0', port=port)
 
