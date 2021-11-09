@@ -28,11 +28,14 @@
         code_editor.setOption("maxLines", 100);
         code_editor.renderer.setPadding(20);
         code_editor.renderer.setScrollMargin(10, 10);
-        code_editor.insert("## Paste in your Python code and hit HELP button to get help\n\n");
+        code_editor.insert("## Paste in your own Python code and hit HELP button to get help\n\nimport requests\n\nr = requests.get('www.sofastatistics.com')");
         editor.gotoLine(100);
     </script>
 
     <input type="submit" id="next" name="next" value="HELP" onclick="getHelp();">
+    
+    <p id='feedback'>Are you finding SuperHELP useful? Or do you have ideas for improvements or possible integration?
+    <br>Feedback welcome at <a href="mailto:superhelp@p-s.co.nz">superhelp@p-s.co.nz</a></p>
 
     </div>
     

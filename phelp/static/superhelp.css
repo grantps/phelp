@@ -11,8 +11,14 @@
   margin: 40px 70px 20px 70px;
 }
 #next {
+  float: left;
   margin-top: 16px;
   width: 100px;
+}
+#feedback {
+  float: left;
+  margin-top: 12px;
+  margin-left: 12px;
 }
 #code {
   font-size: 20px;
@@ -26,4 +32,7 @@
   width: 100%;
   padding: 0;
   margin: 0;
+}
+a {
+  color: #0072aa !important;
 }
