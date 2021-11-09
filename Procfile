@@ -8,5 +8,5 @@
 
 ## https://devcenter.heroku.com/articles/python-gunicorn
 
-web: gunicorn phelp/run:app --workers $WEB_CONCURRENCY
+web: gunicorn phelp.run:app --workers $WEB_CONCURRENCY
 
