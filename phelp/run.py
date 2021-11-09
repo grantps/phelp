@@ -28,7 +28,6 @@ def get_help() -> str:
     
 if __name__ == "__main__":
     LOCAL_DEV_PORT = 5_000
-    #print(os.environ)
     port = int(os.environ.get("PORT", LOCAL_DEV_PORT))  ## use Heroku's dynamically assigned port if set otherwise we're in dev and use that one
     app.run(host='0.0.0.0', port=port)
 
