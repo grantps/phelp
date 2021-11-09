@@ -1,11 +1,24 @@
-
+#logo {
+  float: left;
+  width: 100px;
+  margin-right: 16px;
+}
+#tagline {
+  float: left;
+  margin-left: 4px;
+}
 #input {
   margin: 40px 70px 20px 70px;
+}
+#next {
+  margin-top: 16px;
+  width: 100px;
 }
 #code {
   font-size: 20px;
   min-height: 200px;
   min-width: 700px;
+  max-width: 1100px;
   resize: both;  // override bootstrap
 }
 #code-help {

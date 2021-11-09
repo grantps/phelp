@@ -11,12 +11,13 @@
 
   </head>
   <body>
+
     <div id="input">
+    <img id='logo' src="{{ url_for('static', filename='superhelp_logo.svg') }}">
 
     <h1>SuperHELP</h1>
-
-    <p>Paste in Python script and hit HELP button to get help</p>
-
+    <p id='tagline'>Python Help for Humans!</p>
+    <br><br>
     <div id="code"></div>
 
     <script src="{{ url_for('static', filename='src-min/ace.js') }}" type="text/javascript" charset="utf-8"></script>
@@ -27,11 +28,11 @@
         code_editor.setOption("maxLines", 100);
         code_editor.renderer.setPadding(20);
         code_editor.renderer.setScrollMargin(10, 10);
+        code_editor.insert("## Paste in your Python code and hit HELP button to get help\n\n");
+        editor.gotoLine(100);
     </script>
 
-    <br><br>
-
-    <input type="submit" name="next" value="HELP" onclick="getHelp();">
+    <input type="submit" id="next" name="next" value="HELP" onclick="getHelp();">
 
     </div>
     
